@@ -24,14 +24,14 @@ async def ping(ctx):
 # Send message to devterm
 @bot.command()
 @commands.cooldown(msg_rate, cooldown_seconds, commands.BucketType.guild) #whole guild is in cooldown
-async def print(ctx, arg):
+async def print(ctx, *, arg):
     await ctx.send('Okay, printing "{}" from {}\'s Devterm printer...'.format(str(arg), owner))
     if any((c in illegal_chars) for c in str(arg)):
         await ctx.send("Illegal chars in message!")
     else:
         user_line = '{0.author} sent: \n'.format(ctx)
         message = '{} \n \n \n'.format(str(arg))
-        cmd = 'echo -e "{}{}" > {}'.format(user_line, message, printer_command)
+        cmd = 'echo "{}{}" > {}'.format(user_line, message, printer_command)
         os.system(cmd)
 
 #Prints error during cooldown
