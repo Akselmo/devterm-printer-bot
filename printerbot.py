@@ -14,7 +14,7 @@ msg_rate = 3
 cooldown_seconds = 3
 printer_command = "/tmp/DEVTERM_PRINTER_IN"
 #printer_command = "test.txt"
-illegal_chars = set(r'&|;$><`\!')
+illegal_chars = set(r'&|;$><`\\')
 
 # Test command
 @bot.command()
