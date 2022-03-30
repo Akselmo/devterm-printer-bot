@@ -30,7 +30,7 @@ async def print(ctx, *, arg):
         await ctx.send("Illegal chars in message!")
     else:
         user_line = '{0.author} sent: \n'.format(ctx)
-        message = '{} \n \n \n'.format(str(arg))
+        message = '{} \n \n \n \n \n \n \n \n \n'.format(str(arg)) #more newlines so its easier to see the message
         cmd = 'echo "{}{}" > {}'.format(user_line, message, printer_command)
         os.system(cmd)
 
