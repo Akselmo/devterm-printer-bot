@@ -4,6 +4,10 @@ Simple discord bot that prints any message you give it to my devterm printer.
 
 Can also be used for other printer devices.. If you dare.
 
+Example of the printer output:
+
+![Example of the printer output](example.png)
+
 # Setup
 
 ## 1. Download discord.py
@@ -32,4 +36,7 @@ $print Hello world!
 
 It should report you what's happening and if all goes well, print the message.
 
-TODO: add image of the bot in action
+# Notes
+
+Devterm printer seems to support only ASCII characters.
+
