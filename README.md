@@ -28,6 +28,10 @@ Token has to be on the first line.
 python3 printerbot.py
 ```
 
+## 3.5. Get the bot invite link
+
+Use the bots application page to do this, then invite it to your server
+
 ## 4. Send bot a message!
 
 ```
